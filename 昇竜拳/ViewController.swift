@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     var imageArray2 : Array<UIImage> = []
     var imageArray3 : Array<UIImage> = []
     var imageArray4 : Array<UIImage> = []
+    var imageArray5 : Array<UIImage> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,13 @@ class ViewController: UIViewController {
         while let tatsumakiImage = UIImage(named: "tatsumaki\(imageArray3.count+1)") {
             imageArray3.append(tatsumakiImage)
         }
-        while let kaoruImage = UIImage(named: "kao\(imageArray4.count+1)") {
+        while let kaoruImage = UIImage(named:
+            "kao\(imageArray4.count+1)") {
             imageArray4.append(kaoruImage)
+        }
+        while let kaoruImage = UIImage(named:
+            "yama\(imageArray5.count+1)") {
+                imageArray5.append(kaoruImage)
         }
     }
     
@@ -94,7 +100,21 @@ class ViewController: UIViewController {
         shoryuken.startAnimating()
     }
     
+    @IBOutlet weak var yamaButton: UIButton!
     
+    @IBAction func yamautiButton(_ sender: Any) {
+        // アニメーションの適用
+        shoryuken.animationImages = imageArray5
+        // アニメーションの長さ:2秒
+        shoryuken.animationDuration = 4
+        // アニメーション再生回数:1回
+        shoryuken.animationRepeatCount = 1
+        // アニメーションを開始
+        shoryuken.startAnimating()
+    
+    
+    
+    }
     
     
     

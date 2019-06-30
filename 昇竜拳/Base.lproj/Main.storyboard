@@ -49,47 +49,61 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6X-Fl-fCh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-8O-gTE">
-                                <rect key="frame" x="104" y="745" width="206" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="スーパー昇竜拳">
-                                    <color key="titleColor" red="1" green="0.22726672880000001" blue="0.25933760569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="kaoruButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0r-kp-tQY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlx-yZ-xFW">
-                                <rect key="frame" x="146" y="632" width="122" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlx-yZ-xFW">
+                                <rect key="frame" x="107" y="633" width="200" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="竜巻旋風脚"/>
                                 <connections>
                                     <action selector="tatsumakiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8DF-6t-lRH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-8O-gTE">
+                                <rect key="frame" x="20" y="683" width="374" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="スーパー昇竜拳">
+                                    <color key="titleColor" red="1" green="0.22726672880000001" blue="0.25933760569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="kaoruButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MYu-fb-d4h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBz-BJ-vgz">
+                                <rect key="frame" x="40" y="783" width="334" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="やまちゃん"/>
+                                <connections>
+                                    <action selector="yamautiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUl-et-anc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qct-8O-gTE" firstAttribute="top" secondItem="0TC-c9-zte" secondAttribute="bottom" constant="75" id="8F0-pp-oTG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jBz-BJ-vgz" secondAttribute="trailing" constant="40" id="2cm-F9-ui2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qct-8O-gTE" secondAttribute="trailing" constant="20" id="38k-QQ-OQ4"/>
+                            <constraint firstItem="Tlx-yZ-xFW" firstAttribute="top" secondItem="Huv-xQ-mF8" secondAttribute="bottom" constant="10" id="937-Gl-So4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0TC-c9-zte" secondAttribute="trailing" constant="20" id="Ac4-VD-1Fa"/>
-                            <constraint firstItem="Tlx-yZ-xFW" firstAttribute="top" secondItem="Huv-xQ-mF8" secondAttribute="bottom" constant="10" id="Cen-Yz-T7m"/>
-                            <constraint firstItem="Qct-8O-gTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D98-fp-1X8"/>
+                            <constraint firstItem="jBz-BJ-vgz" firstAttribute="top" secondItem="Qct-8O-gTE" secondAttribute="bottom" constant="10" id="CHi-Tx-Moo"/>
+                            <constraint firstItem="Qct-8O-gTE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ead-65-Obw"/>
                             <constraint firstItem="Huv-xQ-mF8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="KAA-v8-4yD"/>
                             <constraint firstItem="htD-4u-3S4" firstAttribute="top" secondItem="Huv-xQ-mF8" secondAttribute="bottom" constant="10" id="MIg-EK-ha6"/>
+                            <constraint firstItem="Qct-8O-gTE" firstAttribute="top" secondItem="Tlx-yZ-xFW" secondAttribute="bottom" constant="10" id="NB6-Pa-dCM"/>
+                            <constraint firstItem="Tlx-yZ-xFW" firstAttribute="leading" secondItem="htD-4u-3S4" secondAttribute="trailing" constant="5" id="Pgf-Qa-de1"/>
                             <constraint firstItem="0TC-c9-zte" firstAttribute="top" secondItem="Huv-xQ-mF8" secondAttribute="bottom" constant="10" id="U2a-aR-2a5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qct-8O-gTE" secondAttribute="bottom" constant="70" id="XuZ-yn-HXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jBz-BJ-vgz" secondAttribute="bottom" constant="35" id="hYA-p1-qDa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Huv-xQ-mF8" secondAttribute="trailing" constant="5" id="i3k-d5-388"/>
-                            <constraint firstItem="Tlx-yZ-xFW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppA-MU-kbC"/>
+                            <constraint firstItem="jBz-BJ-vgz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="qfF-2Y-Emw"/>
                             <constraint firstItem="htD-4u-3S4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r2t-ch-9z5"/>
+                            <constraint firstItem="0TC-c9-zte" firstAttribute="leading" secondItem="Tlx-yZ-xFW" secondAttribute="trailing" constant="5" id="u1e-1p-alS"/>
                             <constraint firstItem="Huv-xQ-mF8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="xtt-zy-trH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="hadoukenButton" destination="0TC-c9-zte" id="9n6-eb-ltn"/>
-                        <outlet property="kaoButton" destination="Qct-8O-gTE" id="4L5-Hs-abp"/>
+                        <outlet property="kaoButton" destination="Qct-8O-gTE" id="g23-A1-xYz"/>
                         <outlet property="shoryuken" destination="Huv-xQ-mF8" id="PxC-Tq-hXb"/>
                         <outlet property="tatsuButton" destination="Tlx-yZ-xFW" id="Jai-VP-0rE"/>
+                        <outlet property="yamaButton" destination="jBz-BJ-vgz" id="d0L-Fc-URA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

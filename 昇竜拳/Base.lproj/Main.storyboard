@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,88 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="昇竜拳" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Huv-xQ-mF8">
+                                <rect key="frame" x="5" y="49" width="404" height="574"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="PrO-Nq-hvv"/>
+                                    <constraint firstAttribute="height" constant="574" id="vMN-OG-Rle"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TC-c9-zte">
+                                <rect key="frame" x="312" y="633" width="82" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="JZn-lS-9N0"/>
+                                    <constraint firstAttribute="width" constant="82" id="d1U-ti-sFs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="波動拳"/>
+                                <connections>
+                                    <action selector="hadouButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTs-H4-0ex"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htD-4u-3S4">
+                                <rect key="frame" x="20" y="633" width="82" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="If7-Oy-GRC"/>
+                                    <constraint firstAttribute="height" constant="37" id="dgp-MO-9go"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="昇竜拳"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6X-Fl-fCh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-8O-gTE">
+                                <rect key="frame" x="104" y="745" width="206" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="スーパー昇竜拳">
+                                    <color key="titleColor" red="1" green="0.22726672880000001" blue="0.25933760569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="kaoruButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0r-kp-tQY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlx-yZ-xFW">
+                                <rect key="frame" x="146" y="632" width="122" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="竜巻旋風脚"/>
+                                <connections>
+                                    <action selector="tatsumakiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8DF-6t-lRH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qct-8O-gTE" firstAttribute="top" secondItem="0TC-c9-zte" secondAttribute="bottom" constant="75" id="8F0-pp-oTG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0TC-c9-zte" secondAttribute="trailing" constant="20" id="Ac4-VD-1Fa"/>
+                            <constraint firstItem="Tlx-yZ-xFW" firstAttribute="top" secondItem="Huv-xQ-mF8" secondAttribute="bottom" constant="10" id="Cen-Yz-T7m"/>
+                            <constraint firstItem="Qct-8O-gTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D98-fp-1X8"/>
+                            <constraint firstItem="Huv-xQ-mF8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="KAA-v8-4yD"/>
+                            <constraint firstItem="htD-4u-3S4" firstAttribute="top" secondItem="Huv-xQ-mF8" secondAttribute="bottom" constant="10" id="MIg-EK-ha6"/>
+                            <constraint firstItem="0TC-c9-zte" firstAttribute="top" secondItem="Huv-xQ-mF8" secondAttribute="bottom" constant="10" id="U2a-aR-2a5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qct-8O-gTE" secondAttribute="bottom" constant="70" id="XuZ-yn-HXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Huv-xQ-mF8" secondAttribute="trailing" constant="5" id="i3k-d5-388"/>
+                            <constraint firstItem="Tlx-yZ-xFW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppA-MU-kbC"/>
+                            <constraint firstItem="htD-4u-3S4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r2t-ch-9z5"/>
+                            <constraint firstItem="Huv-xQ-mF8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="xtt-zy-trH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hadoukenButton" destination="0TC-c9-zte" id="9n6-eb-ltn"/>
+                        <outlet property="kaoButton" destination="Qct-8O-gTE" id="4L5-Hs-abp"/>
+                        <outlet property="shoryuken" destination="Huv-xQ-mF8" id="PxC-Tq-hXb"/>
+                        <outlet property="tatsuButton" destination="Tlx-yZ-xFW" id="Jai-VP-0rE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-7.2463768115942031" y="134.59821428571428"/>
         </scene>
     </scenes>
 </document>
